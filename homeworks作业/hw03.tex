@@ -1,0 +1,88 @@
+\documentclass[a4paper]{ctexart}
+
+\usepackage{tabularx}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}  % configure page style using the fancyhdr package
+\fancyhf{}  % clear existing header/footer
+
+\begin{document}
+
+\begin{center}
+{\Large
+网安2024春计算机组成原理与汇编语言：第03次作业
+}
+\end{center}
+
+\begin{flushleft}
+\begin{tabularx}{0.5\textwidth}{ >{\raggedright}X >{\raggedright}X }
+姓名&学号\\
+\end{tabularx}
+\end{flushleft}
+
+% 细节上有改动
+
+% 6E3.1 (5E3.1)
+What is \verb|5ED4| minus \verb|07A4| when these values represent unsigned 16-bit hexadecimal numbers?
+The result should be written in hexadecimal. Show your work.
+
+% 6E3.2 (5E3.2)
+What is \verb|5ED4| minus \verb|07A4| when these values represent signed 16-bit hexadecimal numbers
+stored in sign-magnitude format? The result should be written in hexadecimal. Show your work.
+
+% 6E3.7 (5E3.7)
+Assume 185 and 122 are signed 8-bit decimal integers stored in sign-magnitude format.
+Calculate 185 + 122.
+Is there overflow, underflow, or neither?
+
+% 6E3.15 (5E3.15)
+Calculate the time necessary to perform a multiplication using the approach described in the text
+(31 adders stacked vertically)
+if an integer is 8 bits wide and an adder takes 4 time units.
+
+% 6E3.16 (5E3.16)
+Calculate the time necessary to perform a multiplication using the approach given in Figure 3.7
+if an integer is 8 bits wide and an adder takes 4 time units.
+
+% 6E3.20 (5E3.20)
+What decimal number does the bit pattern \verb|0x0c00 0000| represent
+if it is a two's complement integer? An unsigned integer?
+
+% 6E3.22 (5E3.22)
+What decimal number does the bit pattern \verb|0x0c00 0000| represent
+if it is a floating point number?
+Use the IEEE 754 standard.
+
+% 6E3.23 (5E3.23)
+Write down the binary representation of the decimal number 63.25
+assuming the IEEE 754 single precision format.
+
+% 6E3.27 (5E3.27)
+IEEE 754-2008 contains a half precision that is only 16 bits wide.
+The left most bit is still the sign bit, the exponent is 5 bits wide and has a bias of 15,
+and the mantissa is 10 bits long.
+A hidden 1 is assumed.
+Write down the bit pattern to represent $-1.5625 \times {10}^{-1}$ assuming a version of this format,
+which uses an excess-16 format to store the exponent.
+Comment on how the \textbf{range} and \textbf{accuracy} of this 16-bit floating point format
+compares to the single precision IEEE 754 standard.
+
+% 6E3.29 (5E3.29)
+Calculate the sum of $2.6125 \times {10}^{1}$ and $4.150390625 \times {10}^{-1}$ by hand,
+assuming both numbers are stored in the 16-bit half precision described in Exercise 3.27.
+Assume 1 guard bit, 1 round bit, and 1 sticky bit, and round to the nearest even.
+\textbf{Show all the steps.}
+
+% 6E3.30 (5E3.30)
+Calculate the product of $-8.0546875 \times {10}^{0}$ and $1.79931640625 \times {10}^{-1}$ by hand,
+assuming both numbers are stored in the 16-bit half precision format described in Exercise 3.27.
+Assume 1 guard bit, 1 round bit, and 1 sticky bit, and round to the nearest even.
+Show all the steps;
+however, as is done in the example in the text, you can do the multiplication in human-readable format instead of using the techniques described in Exercises 3.12 through 3.14.
+Indicate if there is overflow or underflow.
+Write your answer in both the 16-bit floating point format described in Exercise 3.27
+and also as a decimal number.
+How accurate is your result?
+How does it compare to the number you get if you do the multiplication on a calculator?
+
+\end{document}
