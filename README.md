@@ -4,8 +4,10 @@
 
 ## 导航
 
-* [作业01解析](./answers作业解析/作业01解析.md)
-* [作业03](./homeworks作业/hw03.tex)
+* [作业01](./homework/hw01.docx)
+* [作业01解析](./answers/hw01-answer.md)
+* [作业02勘误](./homework/hw02-errata.md)
+* [作业03勘误](./homework/hw03-errata.md)
 
 ## 贡献 & 改进意见
 
