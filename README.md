@@ -7,6 +7,7 @@
 * [作业01](./homework/hw01.docx)
 * [作业01解析](./answers/hw01-answer.md)
 * [作业02](./homework/hw02.md)
+* [作业02解析](./answers/hw02-answer.md)
 * [作业03](./homework/hw03.md)
 
 ## 贡献 & 改进意见
