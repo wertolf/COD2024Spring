@@ -304,7 +304,9 @@ $$30 = 0.9 I$$
 $$I = \frac{100}{3} \text{A}$$
 
 计算改进后的总功率 $P^\prime$
-$$P^\prime = (1 - 10\%) P = 0.9 \times (30 + 40) = 63 \text{W}$$
+```math
+P^\prime = (1 - 10\%) P = 0.9 \times (30 + 40) = 63 \text{W}
+```
 
 又因为总功率等于动态功率与静态功率之和
 $$P^\prime = P_d^\prime + P_s^\prime$$
@@ -334,7 +336,7 @@ $$P_d = \frac{1}{2}CV^2F$$
 故
 $$P_s \propto V$$
 $$P_d \propto V^2$$
-假设改进前后电压之比为$r$，即
+假设改进前后电压之比为 $r$，即
 $$r \stackrel{\text{def}}{=} \frac{V'}{V}$$
 则有
 $$P'_s = rP_s$$
