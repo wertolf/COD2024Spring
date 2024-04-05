@@ -1,0 +1,101 @@
+\documentclass[manuscript, screen, nonacm]{acmart}
+
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{tabu}
+
+\usepackage{hyperref}
+
+\begin{document}
+
+\begin{table}
+\renewcommand*{\arraystretch}{1.2}
+\caption{IEEE 754 single precision standard.}
+\begin{tabularx}{1.0\textwidth}{
+    | >{\centering\arraybackslash}X
+    | >{\centering\arraybackslash}X
+    | >{\centering\arraybackslash}X |
+}
+\hline
+exponent & fraction & representation \\
+\hline\hline
+$0$ & $0$ & $0$ \\
+\hline
+$0$ & nonzero & denormalized numbers \\
+\hline
+$[1, 254]$ & anything & normalized numbers \\
+\hline
+$255$ & $0$ & $\pm \infty$ \\
+\hline
+$255$ & nonzero & NaN \\
+\hline
+\end{tabularx}
+\end{table}
+
+The smallest positive normalized single precision floating-point number is
+$$(1.\underbrace{0 \dots 0}_\text{23 zeros})_2 \times 2^{1-127} = 2^{-126}$$
+
+The largest positive normalized single precision floating-point number is
+$$(1.\underbrace{1 \dots 1}_\text{23 ones})_2 \times 2^{254-127} = (2 - 2^{-23}) \times 2^{127} = 2^{128} - 2^{104}$$
+
+Hence the range of \textbf{normalized} single precision floating-point numbers is
+$$\left[-\left(2^{128}-2^{104}\right), -2^{-126}\right] \cup \left[2^{-126}, 2^{128}-2^{104}\right]$$
+
+The smallest positive denormalized single precision floating-point number is
+$$(0.\underbrace{0 \dots 0}_\text{22 zeros} 1)_2 \times 2^{-126} = 2^{-23} \times 2^{-126} = 2^{-149}$$
+
+The largest positive normalized single precision floating-point number is
+$$(0.\underbrace{1 \dots 1}_\text{23 ones})_2 \times 2^{-126} = (1 - 2^{-23}) \times 2^{-126} = 2^{-126} - 2^{-149}$$
+
+Hence the range of \textbf{denormalized} single precision floating-point numbers is
+$$\left[-\left(2^{-126}-2^{-149}\right), -2^{-149}\right] \cup \left[2^{-149}, 2^{-126}-2^{-149}\right]$$
+
+Similarly, we can get the corresponding ranges for the half precision standard and the double precision standard.
+The result is summarized in Table \ref{table:comparing_basics} and Table \ref{table:comparing_range}.
+
+\begin{table}
+\caption{Comparison among the IEEE 754 half, single, and double precision standard.}
+\label{table:comparing_basics}  % note: the label should always be after the caption
+\begin{tabularx}{1.0\textwidth}{
+    | >{\centering\arraybackslash}X
+    | >{\centering\arraybackslash}X
+    | >{\centering\arraybackslash}X |
+}
+\hline
+type & significand digits & range of exponent \\
+\hline\hline
+half & $10 + 1$ & $[-14, +15]$ \\
+\hline
+single & $23 + 1$ & $[-126, +127]$ \\
+\hline
+double & $52 + 1$ & $[-1022, +1023]$ \\
+\hline
+\end{tabularx}
+\end{table}
+
+\begin{table}
+\caption{Comparison among the ranges of (positive) numbers of the IEEE 754 half, single, and double precision standard.}
+\label{table:comparing_range}  % note: the label should always be after the caption
+{\tabulinesep=1.2mm
+\begin{tabu}{|c|c|c|}
+\hline
+type & denormalized numbers & normalized numbers \\
+\hline\hline
+half
+    & $\left[2^{-14-10}, \left(1 - 2^{-10}\right) \times 2^{-14}\right]$
+    & $\left[2^{-14}, \left(2 - 2^{-10}\right) \times 2^{15}\right]$ \\
+\hline
+single
+    & $\left[2^{-126-23}, \left(1 - 2^{-23}\right) \times 2^{-126}\right]$
+    & $\left[2^{-126}, \left(2 - 2^{-23}\right) \times 2^{127}\right]$ \\
+\hline
+double
+    & $\left[2^{-1022-52}, \left(1 - 2^{-52}\right) \times 2^{-1022}\right]$
+    & $\left[2^{-1022}, \left(2 - 2^{-52}\right) \times 2^{1023}\right]$ \\
+\hline
+\end{tabu}
+}
+\end{table}
+
+\end{document}
