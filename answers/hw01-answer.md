@@ -132,8 +132,11 @@ Windows/Linux相关文件后缀名对比
 
 $$\text{执行时间t} = \frac{\text{指令数I} \times \text{平均每条指令所消耗的时钟周期数CPI}}{\text{时钟频率r}}$$
 
-设程序P在M1上的运行时间为$\text{t}_1$，在M2上的运行时间为$\text{t}_2$，则
+设
+* 程序P在M1上的运行时间为 $\text{t}_1$
+* 程序P在M2上的运行时间为 $\text{t}_2$
 
+则
 $$\frac{\text{t}_1}{\text{t}_2} = \frac{\frac{\text{I} \times \text{CPI}_1}{\text{r}_1}}{\frac{\text{I} \times \text{CPI}_2}{\text{r}_2}} = \frac{\text{CPI}_1}{\text{CPI}_2} \times \frac{\text{r}_2}{\text{r}_1} = \frac{1.5}{1} \times \frac{1.2}{1.5} = 1.2$$
 
 ## 单选第6题
@@ -170,9 +173,9 @@ $$\text{MIPS} = \frac{\text{r}}{\text{CPI}} \times {10}^{-6} = \frac{1.2 \text{G
 
 ### 小题a
 
-* P1的IPS等于$2 \times {10}^{9}$
-* P2的IPS等于$2.5 \times {10}^{9}$
-* P3的IPS等于$1.82 \times {10}^{9}$
+* P1的IPS等于 $2 \times {10}^{9}$
+* P2的IPS等于 $2.5 \times {10}^{9}$
+* P3的IPS等于 $1.82 \times {10}^{9}$
 
 就IPS而言，P2的性能最高。
 
@@ -184,7 +187,7 @@ $$\text{每秒执行的指令数IPS} = \text{每秒的时钟周期数r} \times \
 
 由于
 $$\text{t} = \frac{\text{I} \times \text{CPI}}{\text{r}}$$
-特别地，当$\text{t}$为$1$时
+特别地，当 $\text{t}$ 为 $1$ 时
 $$1 \text{秒} = \frac{\text{IPS} \times \text{CPI}}{\text{r}}$$
 从而
 $$\text{IPS} = \frac{1}{\frac{\text{CPI}}{\text{r}}} = \frac{\text{r}}{\text{CPI}}$$
@@ -238,7 +241,7 @@ $$\text{r}^\prime = \frac{\text{I} \times \text{CPI} \times (1 + 20\%)}{\text{t}
 
 ### 整理信息
 
-| 处理器型号 | 时钟频率$F$ | 电压$V$ | 静态功率$P_s$ | 动态功率$P_d$ |
+| 处理器型号 | 时钟频率 $F$ | 电压 $V$ | 静态功率 $P_s$ | 动态功率 $P_d$ |
 | ------------------------- | ------- | ------ | ---- | ---- |
 | Pentium 4 Prescott (2004) | 3.6 GHz | 1.25 V | 10 W | 90 W |
 | Core i5 Ivy Bridge (2012) | 3.4 GHz |  0.9 V | 30 W | 40 W |
@@ -286,21 +289,21 @@ $$C = \frac{2 \times 40\text{W}}{{(0.9)}^{2}\text{V}^{2} \times 3.4 \times {10}^
 
 以Core i5 Ivy Bridge为例
 
-动态功率$P_d$的计算公式
+动态功率 $P_d$ 的计算公式
 $$P_d = \frac{1}{2} C V^2 F$$
 
-代入改进前的数据，求出$C$与$F$的乘积
+代入改进前的数据，求出 $C$ 与 $F$ 的乘积
 $$40 = \frac{1}{2} \times {0.9}^2 C F$$
 $$CF = \frac{2 \times 40}{0.81} = \frac{8000}{81} \text{F} \cdot \text{Hz}$$
 
-静态功率$P_s$的计算公式
+静态功率 $P_s$ 的计算公式
 $$P_s = V I$$
 
-代入改进前的数据，求出电流$I$
+代入改进前的数据，求出电流 $I$
 $$30 = 0.9 I$$
 $$I = \frac{100}{3} \text{A}$$
 
-计算改进后的总功率$P^\prime$
+计算改进后的总功率 $P^\prime$
 $$P^\prime = (1 - 10\%) P = 0.9 \times (30 + 40) = 63 \text{W}$$
 
 又因为总功率等于动态功率与静态功率之和
