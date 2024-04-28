@@ -262,10 +262,25 @@ imm[11:5]  rs2    rs1 funct3  imm[4:0]  opcode
 
 ## 画出`sw $r3, 16($r1)`指令的数据路径与控制信号
 
-优秀作业展示
-* ...
-
 > [!NOTE]
 > * 6-bit op + 5-bit rs + 5-bit rt + 16-bit imm
 > * $r1对应rs
 > * $r3对应rt
+
+**以下为优秀作业展示**
+
+![Example 1](../extra/sw-datapath/example1.jpg)
+
+![Example 2](../extra/sw-datapath/example2.jpg)
+
+![Example 3](../extra/sw-datapath/example3.jpg)
+
+![Example 4](../extra/sw-datapath/example4.jpg)
+
+![Example 5](../extra/sw-datapath/example5.jpg)
+
+![Example 6](../extra/sw-datapath/example6.jpg)
+
+![Example 7](../extra/sw-datapath/example7.jpg)
+
+![Example 8](../extra/sw-datapath/example8.jpg)
