@@ -10,7 +10,7 @@
 
 ## 习题4.1
 
-![Fig 4.10](../extra/fig410.png)
+![Fig 4.10](../extra/img/fig410.png)
 
 ```mipsasm
 and rd, rs1, rs2
@@ -57,7 +57,7 @@ and rd, rs1, rs2
 > 官方答案认为跳转指令`j`也需要用到符号扩展器，但是根据教材图4.24所示，跳转指令`j`的数据通路并没有用到符号扩展器
 * 即使某个时钟周期不需要使用符号扩展器的输出，符号扩展器也会照常产生输出，只不过这个输出会被忽略
 
-![Fig 4.24](../extra/fig424.png)
+![Fig 4.24](../extra/img/fig424.png)
 
 ## 习题4.5
 
@@ -75,7 +75,7 @@ imm[11:5]  rs2    rs1 funct3  imm[4:0]  opcode
 
 ## 习题4.7
 
-![Fig 4.17](../extra/fig417.png)
+![Fig 4.17](../extra/img/fig417.png)
 
 > [!NOTE]
 > * **关键路径**指的是延迟最大的信号传输路径
