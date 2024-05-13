@@ -13,10 +13,21 @@
 
 运行 Logisim 需要 JRE，推荐安装 [JDK 21](https://www.oracle.com/java/technologies/downloads/#jdk21-windows)。
 
-建议使用最新版本的 [Logisim-evolution](https://github.com/logisim-evolution/logisim-evolution/releases) 或[华中科技大学在线课程所使用的 Logisim 版本](https://gitee.com/totalcontrol/hustzc/blob/master/%E9%A2%84%E8%A3%85%E8%BD%AF%E4%BB%B6/logisim-hust-20200118.exe)。
+建议使用华中科技大学在线课程所使用的 [Logisim 版本](https://gitee.com/totalcontrol/hustzc/blob/master/%E9%A2%84%E8%A3%85%E8%BD%AF%E4%BB%B6/logisim-hust-20200118.exe)。
 
 > [!IMPORTANT]
 > 强烈建议同学们在完成第一次实验课作业前，阅读教材第 8 章《Logisim 用户指南》或观看在线课程第 1.1 节《一小时玩转 Logisim》，熟悉 Logisim 的界面、菜单以及常用快捷键。
+
+> [!TIP]
+> Logisim 使用小贴士
+> * 如果仔细检查电路之后发现没有问题，但是使用戳工具进行仿真时出现奇怪的结果，例如某条线变成蓝色或红色，不妨重启一下软件试试
+
+## 实验安排
+
+* [加法器设计实验](./adder.md)
+* ALU 设计实验
+* [海明校验实验](./hamming-code.md)
+* ...
 
 ## 实验报告参考框架
 
@@ -24,7 +35,3 @@
 * 简述相关背景知识、原理或电路设计思路
 * 展示最终绘制出的电路图
 * （其余自由发挥，可添加额外内容）
-
-## 补充内容
-
-* [4 位快速加法器](../extra/LA2-2.md)
