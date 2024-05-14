@@ -25,6 +25,7 @@
 * [加法器设计实验](./adder.md)
 * [ALU 设计实验](./arithmetic-logical-unit.md)
 * [海明校验实验](./hamming-code.md)
+* [寄存器文件设计实验](./register-file.md)
 * ...
 
 ## 实验报告参考框架
