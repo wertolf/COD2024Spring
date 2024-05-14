@@ -13,7 +13,9 @@
 * [作业03](./homework/hw03.md)
 * [作业03解析 - 第3章相关内容](./answers/hw03-answer-ch03.md)
 * [作业03解析 - 第4章相关内容](./answers/hw03-answer-ch04.md)
-* [第 05 次作业](./homework/hw05.md)
+* [作业04解析](./answers/hw04-answer.pdf)
+* [第 5 次作业](./homework/hw05.md)
+* [第 5 次作业解析](./answers/hw05-answer.md)
 
 ### 第1次答疑相关材料
 
