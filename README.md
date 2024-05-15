@@ -16,6 +16,7 @@
 * [作业04解析](./answers/hw04-answer.pdf)
 * [第 5 次作业](./homework/hw05.md)
 * [第 5 次作业 - 解析](./answers/hw05-answer.md)
+* [第 6 次作业](./homework/hw06.md)
 
 ### 第1次答疑相关材料
 
