@@ -30,8 +30,11 @@
 * [海明校验实验](./hamming-code.md)
 * [寄存器文件设计实验](./register-file.md)
 * 单周期 CPU 设计实验
-  * [基本架构](./single-cycle-cpu-overview.md)
+  * [概览](./single-cycle-cpu-overview.md)
   * [支持 8 条 MIPS 指令](./8-instruction-cpu.md)
+* cache 设计实验
+  * [概览](./cache-overview.md)
+  * [直接相联映射](./direct-mapped-cache.md)
 * ...
 
 ## 实验报告参考框架
