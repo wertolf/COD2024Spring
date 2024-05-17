@@ -277,18 +277,20 @@ $$\underbrace{1 + 0.08 \times (9 + 0.95 \times 107)}_{\text{AMAT}} + 0.36 \times
 ### 第 6 小问
 
 只需求解一个简单的不等式
-$$ 9 + 107 x < 107$$
+
+$$9 + 107 x < 107$$
+
 解得 $x < \frac{98}{107} \approx 0.916$
 
 ### 第 7 小问
 
 本质上还是一个简单的不等式求解问题，没有太多需要注意的，只是它比较繁琐，所以需要细心
 
-$$ \text{CPI}_{\text{P1}} \times 0.66 < 6.62832 $$
-
-$$ \text{CPI}_{\text{P1}} = \text{AMAT}_{\text{P1}} + 0.36 \times (\text{AMAT}_{\text{P1}} - 1)$$
-
-$$ \text{AMAT}_{\text{P1}} = 1 + 0.08 \times (9 + 107 y) $$
+$$\text{CPI}_{\text{P1}} \times 0.66 < 6.62832$$
+```math
+\text{CPI}_{\text{P1}} = \text{AMAT}_{\text{P1}} + 0.36 \times (\text{AMAT}_{\text{P1}} - 1)
+```
+$$\text{AMAT}_{\text{P1}} = 1 + 0.08 \times (9 + 107 y)$$
 
 我自己的习惯是，为了确保计算的精度，在最后一步之前统一用精确值进行计算
 ```
@@ -296,4 +298,5 @@ $$ \text{AMAT}_{\text{P1}} = 1 + 0.08 \times (9 + 107 y) $$
 0.6926633015143185
 ```
 最终结果和官方答案一致
-$$ y < 0.693 $$
+
+$$y < 0.693$$
