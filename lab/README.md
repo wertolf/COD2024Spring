@@ -4,6 +4,9 @@
 * 教材配套在线课程：https://www.icourse163.org/course/HUST-1205809816
 * 教材配套仓库：https://gitee.com/totalcontrol/hustzc
 
+> [!IMPORTANT]
+> 遇到问题时，请多去翻阅实验课教材或者观看相应的在线课程视频。基本上都能找到答案。
+
 ## 实验环境 - Windows
 
 本课程使用 Logisim 仿真平台进行教学。
@@ -26,6 +29,9 @@
 * [ALU 设计实验](./arithmetic-logical-unit.md)
 * [海明校验实验](./hamming-code.md)
 * [寄存器文件设计实验](./register-file.md)
+* 单周期 CPU 设计实验
+  * [基本架构](./single-cycle-cpu-overview.md)
+  * [支持 8 条 MIPS 指令](./8-instruction-cpu.md)
 * ...
 
 ## 实验报告参考框架
