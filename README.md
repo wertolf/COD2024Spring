@@ -1,7 +1,6 @@
-# 2024 春《计算机组成原理与汇编语言》课程资料国内镜像
+# 2024 春《计算机组成原理与汇编语言》课程资料
 
 本仓库用于发布中山大学网络空间安全学院 2024 年春季学期《计算机组成原理与汇编语言》课程的相关资料
-* 原 GitHub 仓库地址：https://github.com/wertolf/COD2024Spring
 
 ## 导航
 
@@ -19,9 +18,10 @@
 * [ALU 设计实验](./lab/arithmetic-logical-unit.md)
 * [海明校验实验](./lab/hamming-code.md)
 * [寄存器文件设计实验](./lab/register-file.md)
-* 单周期 CPU 设计实验
+* 单周期 MIPS CPU 设计实验
   * [概览](./lab/single-cycle-cpu-overview.md)
-  * [支持 8 条 MIPS 指令](./lab/8-instruction-cpu.md)
+  * [支持 8 条指令](./lab/8-instruction-cpu.md)
+  * [支持 24 条指令](./lab/24-instruction-cpu.md)
 * cache 设计实验
   * [概览](./lab/cache-overview.md)
   * [直接相联映射](./lab/direct-mapped-cache.md)
