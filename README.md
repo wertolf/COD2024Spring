@@ -10,10 +10,6 @@
 * 实验课教材：《计算机组成原理实践教程——从逻辑门到CPU》
 * 教材配套在线课程：https://www.icourse163.org/course/HUST-1205809816
 * 教材配套仓库：https://gitee.com/totalcontrol/hustzc
-
-> [!IMPORTANT]
-> 遇到问题时，请多去翻阅实验课教材或者观看相应的在线课程视频。基本上都能找到答案。
-
 * [实验环境](./lab/env.md)
 * [Logisim 使用小贴士](./lab/tips.md)
 
