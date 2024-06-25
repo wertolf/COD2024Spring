@@ -202,6 +202,9 @@ cache 的每一个 entry 除了要存储数据之外，还需要存储用于管�
 
 ## 书后习题 5.10
 
+> [!NOTE]
+> 不必过于纠结这道题。题干第一句话说要探讨容量对性能的影响，但是这道题失败的地方在于，计算的过程完全不涉及 cache 的容量。
+
 ### 第 1 小问
 
 送分题。
@@ -211,9 +214,18 @@ cache 的每一个 entry 除了要存储数据之外，还需要存储用于管�
 
 ### 第 2 小问
 
-$$\text{AMAT} = \text{time for a hit} + \text{miss rate} \times \text{miss penalty}$$
+$\text{AMAT (Average Memory Access Time)}$
 
-从官方答案来看，需要沿用第 1 小问的假设，即 L1 cache 的命中时间等于 P1 和 P2 的时钟周期。
+$=r_{\text{hit}} \cdot t_{\text{hit}} + r_{\text{miss}} \cdot t_{\text{miss}}$
+
+$=\left( r_{\text{hit}} + r_{\text{miss}} \right) \cdot t_{\text{hit}} + r_{\text{miss}} \cdot \left( t_{\text{miss}} - t_{\text{hit}} \right)$
+
+$=t_{\text{hit}} + r_{\text{miss}} \cdot \left( t_{\text{miss}} - t_{\text{hit}} \right)$
+
+$=\text{命中时间} + \text{缺失率} \times \text{缺失代价}$
+
+
+沿用第 1 小问的假设，即 L1 cache 的命中时间等于处理器的时钟周期。
 
 于是需要将访存时间换算成周期数
 * 对 P1 来说，访问一次内存需要 $\lceil \frac{70}{0.66} \rceil= 107$ 个时钟周期
@@ -299,6 +311,11 @@ $$\text{AMAT}_{\text{P1}} = 1 + 0.08 \times (9 + 107 y)$$
 >>> (5.96832 - 9 * 1.36 * 0.08 * 0.66) / (1.36 * 0.08 * 0.66 * 107)
 0.6926633015143185
 ```
-最终结果和官方答案一致
+最终结果为
 
-$$y < 0.693$$
+$$y < 0.692$$
+
+> [!NOTE]
+> 在这里，“舍”比“入”更加合理，如果写成
+> $$y < 0.693$$
+> 那么令 $y = 0.6927$ 则此时的 $y$ 实际上不满足题目条件。
