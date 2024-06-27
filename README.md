@@ -22,10 +22,16 @@
   * [概览](./lab/single-cycle-cpu-overview.md)
   * [支持 8 条指令](./lab/8-instruction-cpu.md)
   * [支持 24 条指令](./lab/24-instruction-cpu.md)
+* 多周期 MIPS CPU 设计实验
+  * 微程序控制器
+  * 硬布线控制器
+* MIPS 指令流水线设计
+  * [指令流水线基本概念](./lab/pipeline-overview.md)
+  * [理想指令流水线设计](./lab/basic-pipeline.md)
 * cache 设计实验
   * [概览](./lab/cache-overview.md)
   * [直接相联映射](./lab/direct-mapped-cache.md)
-* ...
+  * 组相联映射
 
 ### 理论课相关
 
@@ -40,12 +46,16 @@
 * [作业 03](./homework/hw03.md)
 * [作业 03 解析 - 第 3 章相关内容](./answers/hw03-answer-ch03.md)
 * [作业 03 解析 - 第 4 章相关内容](./answers/hw03-answer-ch04.md)
-* [作业 04 解析](./answers/hw04-answer.pdf)
-* [第 5 次作业](./homework/hw05.md)
-* [第 5 次作业 - 解析](./answers/hw05-answer.md)
-* [第 6 次作业](./homework/hw06.md)
+* [作业 04](./homework/hw04.md)
+* [作业 04 解析](./answers/hw04-answer.md)
+* [作业 05](./homework/hw05.md)
+* [作业 05 解析](./answers/hw05-answer.md)
+* [作业 06](./homework/hw06.md)
+* [作业 06 解析](./answers/hw06-answer.md)
+* [作业 07](./homework/hw07.md)
+* [作业 07 解析](./answers/hw07-answer.md)
 
-#### 第 1 次答疑
+#### 答疑
 
 * [基本 MIPS 汇编语言](./extra/第1次答疑/基本MIPS汇编语言.pdf)
 * [硬件对过程的支持](./extra/第1次答疑/硬件对过程的支持.pdf)
